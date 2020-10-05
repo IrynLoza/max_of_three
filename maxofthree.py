@@ -23,6 +23,25 @@ For example::
 def max_of_three(num1, num2, num3):
     """Returns the largest of three integers"""
 
+    # Solution with list:
+    # nums = [num1, num2, num3]
+
+    # max_num = nums[0]
+
+    # for num in nums:
+    #     if num > max_num:
+    #         max_num = num
+    # return max_num 
+    
+    max_num = num1
+
+    if num2 > max_num:
+        max_num = num2 
+    if num3 > max_num:
+        max_num = num3
+
+    return max_num    
+
 
 if __name__ == '__main__':
     import doctest
